@@ -1,1 +1,8 @@
+## Dependencias del proyecto 12 Factores (Python)
+## Instalar usando pip install nombre_libreria
 
+Flask
+Flask-Migrate
+Flask-SQLAlchemy
+SQLAlchemy==1.4 ## Especificamente version 1.4
+psycopg2-binary
