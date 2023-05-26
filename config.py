@@ -1,4 +1,10 @@
-import os
+#Variables de configuracion de la base de datos
+DATABASE_USER = "postgres"
+DATABASE_PASSWORD = "postgres"
+DATABASE_HOST = "localhost"
+DATABASE_PORT = "5000"
+DATABASE_NAME = "cars_api"
 
-SQLALCHEMY_DATABASE_URI =  f"postgresql://{os.getenv('DATABASE_USER')}:{os.getenv('DATABASE_PASSWORD')}@{os.getenv('DATABASE_HOST')}:{os.getenv('DATABASE_PORT')}/{os.getenv('DATABASE_NAME')}"
+SQLALCHEMY_DATABASE_URI =  f"postgresql://{DATABASE_USER}:{DATABASE_PASSWORD}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE_NAME}"
 SQLALCHEMY_TRACK_MODIFICATIONS = False
+

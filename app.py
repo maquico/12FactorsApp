@@ -5,7 +5,6 @@ from flask_migrate import Migrate
 app = Flask(__name__)
 #Backing services separados de la aplicación
 app.config.from_pyfile('config.py')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
